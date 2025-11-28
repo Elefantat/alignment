@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Heart, Search, Puzzle, Shield, Settings } from 'lucide-react'
 
 const steps = [
@@ -39,6 +40,51 @@ export default function AlignmentSections() {
       
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-24">
         
+        {/* Meet the Founder Card */}
+        <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-alignment-navy mb-8">
+            Meet the Founder
+          </h2>
+          
+          {/* Top row: Photo left, Name/Title right */}
+          <div className="flex items-center gap-6 mb-6">
+            {/* Photo - no border */}
+            <div className="flex-shrink-0">
+              <div className="w-[150px] h-[150px] rounded-full overflow-hidden">
+                <Image
+                  src="/founder.png"
+                  alt="Jeremy Walker - Founder"
+                  width={150}
+                  height={150}
+                  className="w-full h-full object-cover object-top"
+                  priority
+                />
+              </div>
+            </div>
+            
+            {/* Name and Title */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-alignment-navy mb-1">
+                Jeremy Walker
+              </h3>
+              <p className="text-alignment-teal font-medium text-lg">
+                Founder, Beneath the Surface
+              </p>
+            </div>
+          </div>
+          
+          {/* Bio text */}
+          <div className="space-y-4 text-alignment-navy/80 text-base md:text-lg leading-relaxed">
+            <p>
+              I grew up in a farming family in regional Western Australia and began working on a relative&apos;s property straight after school. At 22, I took on clearing and farming a 6,000-acre ex-bluegum plantation—a demanding role that quickly became my identity. My self-worth rose and fell with the seasons, and eventually the pressure became impossible to ignore.
+            </p>
+            
+            <p>
+              Through therapy, psychology, and long periods alone—especially after my wife and daughter moved to Perth—I began to understand the habits and pain driving my behaviour. Leaving the farm marked a shift toward rebuilding with clarity. Since then, I&apos;ve focused on studying human behaviour through Dr Shefali Tsabary&apos;s Conscious Psychology Institute and a Diploma in Psychotherapy and Counselling. That journey led to Beneath the Surface, a platform designed to help people reflect honestly and explore what&apos;s happening beneath everyday life.
+            </p>
+          </div>
+        </div>
+
         {/* How Alignment Works Card */}
         <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-alignment-navy mb-6">
@@ -136,7 +182,3 @@ export default function AlignmentSections() {
     </section>
   )
 }
-
-
-
-
