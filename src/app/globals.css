@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-teal: #0D9488;
+  --color-teal-dark: #0F766E;
+  --color-teal-light: #14B8A6;
+  --color-navy: #0F1D2F;
+  --color-navy-light: #1A2D44;
+  --color-cream: #F5F0E8;
+  --color-cream-light: #FAF7F2;
+  --color-sand: #E8DFD0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: var(--color-cream-light);
+  color: var(--color-navy);
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-alignment-teal text-white font-medium rounded-full transition-all duration-300 hover:bg-alignment-teal-dark hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-alignment-navy text-alignment-navy font-medium rounded-full transition-all duration-300 hover:bg-alignment-navy hover:text-white;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white font-medium rounded-full transition-all duration-300 hover:bg-white hover:text-alignment-navy;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-display font-semibold tracking-tight;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+}
+
+/* Phone mockup styling */
+.phone-frame {
+  position: relative;
+  background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.phone-screen {
+  border-radius: 32px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Progress line for steps */
+.step-line {
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-teal) 0%, var(--color-teal-light) 100%);
+}
+
+/* Wheat field background effect */
+.wheat-bg {
+  background: 
+    linear-gradient(to bottom, rgba(245, 240, 232, 0.95) 0%, rgba(245, 240, 232, 0.7) 30%, rgba(245, 240, 232, 0.4) 100%),
+    url('/wheat-field.jpg') center bottom / cover no-repeat;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-teal-dark);
+}
+
+
+
+
