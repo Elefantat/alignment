@@ -65,7 +65,7 @@ export default function Footer() {
               <span className="text-xl font-display font-semibold">Alignment</span>
             </Link>
             <p className="text-white/60 text-sm mb-6 max-w-xs">
-              AI-supported inner-work platform that meets you where you&apos;re at. A stigma-free way to get clear on what&apos;s going inside.
+              AI supported inner work platform that meets you where you&apos;re at. A stigma free way to get clear on what&apos;s going inside.
             </p>
             
             {/* Social Links */}

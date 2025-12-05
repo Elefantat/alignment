@@ -11,7 +11,7 @@ export default function Header() {
   const navLinks = [
     { href: '#features', label: 'Features' },
     { href: '#meet-the-founder', label: 'About Us' },
-    { href: '#community', label: 'Community' },
+    { href: '#social-impact', label: 'Community' },
     { href: '#pricing', label: 'Pricing' },
   ]
 

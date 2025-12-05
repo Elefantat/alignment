@@ -76,7 +76,7 @@ export default function AlignmentSections() {
             </p>
             
             <p>
-              Eventually I reached a point where I had to turn inward. That began a journey of studying psychology, behaviour, trauma patterns, and the ways our upbringing shapes us. What I discovered changed the way I saw myself — and the way I saw others.
+              Eventually I reached a point where I had to turn inward. That began a journey of studying psychology, behaviour, trauma patterns, and the ways our upbringing shapes us. What I discovered changed the way I saw myself and the way I saw others.
             </p>
             
             <p>
@@ -151,7 +151,7 @@ export default function AlignmentSections() {
         </div>
 
         {/* Social Impact & Giving Back Card */}
-        <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50">
+        <div id="social-impact" className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50 scroll-mt-24">
           <div className="flex items-start justify-between gap-4 mb-6">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-alignment-navy">
               Social Impact & Giving Back
@@ -167,23 +167,57 @@ export default function AlignmentSections() {
             </div>
           </div>
           
-          <div className="space-y-5 text-alignment-navy/80">
+          <div className="space-y-5 text-alignment-navy/80 mb-8">
             <p className="text-lg leading-relaxed">
-              Alignment was born from lived experience — a journey through isolation, pressure, and honest self-reflection that reshaped how I understand mental health. That personal shift became a mission to make emotional awareness accessible to all Australians, especially those who carry the load quietly.
+              Alignment was born from lived experience, a journey through isolation, pressure, and honest self-reflection that reshaped how I understand mental health. That personal shift became a mission to make emotional awareness accessible to all Australians, especially those who carry the load quietly.
             </p>
             
             <p className="text-lg leading-relaxed">
               Our heart sits with regional and remote communities, and with Aboriginal and Torres Strait Islander communities, where the need for support is greatest. Suicide rates in very remote areas are more than double those of major cities, and First Nations people face rates nearly three times higher. These realities guide our commitment.
             </p>
-            
-            <p className="text-lg leading-relaxed">
-              To support this, a minimum of 10% of annual net revenue goes to the Access & Outreach Fund, offering free access, education partnerships, and community-led programs where services are hardest to reach.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              It&apos;s more than a business model — it&apos;s a promise to give back. Every reflection shared with Alignment helps build a wider ecosystem of care, and every dollar returned through our fund helps someone in a remote town or culturally rich community feel seen, supported, and connected.
-            </p>
           </div>
+
+          {/* Access Fund Feature - Image with highlight box */}
+          <div className="bg-gradient-to-r from-alignment-teal/10 to-alignment-teal/5 rounded-2xl p-6 mb-8">
+            <div className="flex flex-col md:flex-row gap-6 items-center">
+              {/* Image representing regional/indigenous communities */}
+              <div className="flex-shrink-0 w-full md:w-1/3">
+                <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
+                  <Image
+                    src="/access-fund.jpg"
+                    alt="Supporting regional and indigenous communities"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-alignment-navy/40 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <span className="bg-alignment-teal text-white text-sm font-semibold px-3 py-1 rounded-full">
+                      10% Access Fund
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Fund description */}
+              <div className="flex-1">
+                <h3 className="text-xl font-display font-bold text-alignment-navy mb-3">
+                  Access & Outreach Fund
+                </h3>
+                <p className="text-alignment-navy/80 leading-relaxed">
+                  A minimum of 10% of annual net revenue goes to the Access & Outreach Fund, offering free access, education partnerships, and community-led programs where services are hardest to reach.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="bg-white/80 text-alignment-navy text-sm px-3 py-1 rounded-full">Regional Communities</span>
+                  <span className="bg-white/80 text-alignment-navy text-sm px-3 py-1 rounded-full">First Nations</span>
+                  <span className="bg-white/80 text-alignment-navy text-sm px-3 py-1 rounded-full">Remote Areas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <p className="text-lg leading-relaxed text-alignment-navy/80">
+            It&apos;s more than a business model, it&apos;s a promise to give back. Every reflection shared with Alignment helps build a wider ecosystem of care, and every dollar returned through our fund helps someone in a remote town or culturally rich community feel seen, supported, and connected.
+          </p>
         </div>
 
       </div>

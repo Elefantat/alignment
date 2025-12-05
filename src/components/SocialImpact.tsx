@@ -32,7 +32,7 @@ export default function SocialImpact() {
           
           <div className="space-y-5 text-alignment-navy/80">
             <p className="text-lg leading-relaxed">
-              Alignment was born from lived experience — a journey through isolation, pressure, and honest self-reflection that reshaped how I understand mental health. That personal shift became a mission to make emotional awareness accessible to all Australians, especially those who carry the load quietly.
+              Alignment was born from lived experience, a journey through isolation, pressure, and honest self reflection that reshaped how I understand mental health. That personal shift became a mission to make emotional awareness accessible to all Australians, especially those who carry the load quietly.
             </p>
             
             <p className="text-lg leading-relaxed">
@@ -44,7 +44,7 @@ export default function SocialImpact() {
             </p>
             
             <p className="text-lg leading-relaxed">
-              It&apos;s more than a business model — it&apos;s a promise to give back. Every reflection shared with Alignment helps build a wider ecosystem of care, and every dollar returned through our fund helps someone in a remote town or culturally rich community feel seen, supported, and connected.
+              It&apos;s more than a business model, it&apos;s a promise to give back. Every reflection shared with Alignment helps build a wider ecosystem of care, and every dollar returned through our fund helps someone in a remote town or culturally rich community feel seen, supported, and connected.
             </p>
           </div>
         </div>

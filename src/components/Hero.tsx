@@ -27,11 +27,11 @@ export default function Hero() {
             </h1>
             
             <p className="text-xl md:text-2xl text-alignment-navy font-light mx-auto lg:mx-0 drop-shadow-sm whitespace-nowrap">
-              AI built for reflective wellbeing – not just comfort
+              AI built for reflective wellbeing, not just comfort
             </p>
             
             <p className="text-base md:text-lg text-alignment-navy/80 mx-auto lg:mx-0 drop-shadow-sm whitespace-nowrap">
-              AI-supported inner-work platform that meets you where you&apos;re at
+              AI supported inner work platform that meets you where you&apos;re at
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6">

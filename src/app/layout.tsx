@@ -4,6 +4,10 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Alignment - AI Built for Reflective Wellbeing',
   description: 'AI-supported inner-work platform that meets you where you\'re at. A stigma-free way to get clear on what\'s going inside.',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({
