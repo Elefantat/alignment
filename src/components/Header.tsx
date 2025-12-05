@@ -10,9 +10,9 @@ export default function Header() {
 
   const navLinks = [
     { href: '#features', label: 'Features' },
-    { href: '#pricing', label: 'Pricing' },
-    { href: '#about', label: 'About Us' },
+    { href: '#meet-the-founder', label: 'About Us' },
     { href: '#community', label: 'Community' },
+    { href: '#pricing', label: 'Pricing' },
   ]
 
   return (
@@ -41,9 +41,12 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link href="#signup" className="btn-primary">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <Link href="/login" className="px-5 py-2.5 text-alignment-navy font-medium hover:text-alignment-teal transition-colors">
+              Sign In
+            </Link>
+            <Link href="/signup" className="btn-primary">
               Sign Up
             </Link>
           </div>
@@ -74,9 +77,16 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="#signup"
+              href="/login"
               onClick={() => setIsMenuOpen(false)}
-              className="btn-primary w-full text-center mt-4"
+              className="block py-2 text-alignment-navy font-medium hover:text-alignment-teal transition-colors text-center mt-4"
+            >
+              Sign In
+            </Link>
+            <Link
+              href="/signup"
+              onClick={() => setIsMenuOpen(false)}
+              className="btn-primary w-full text-center mt-2"
             >
               Sign Up
             </Link>

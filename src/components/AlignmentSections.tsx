@@ -41,11 +41,7 @@ export default function AlignmentSections() {
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-24">
         
         {/* Meet the Founder Card */}
-        <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-alignment-navy mb-8">
-            Meet the Founder
-          </h2>
-          
+        <div id="meet-the-founder" className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50 scroll-mt-24">
           {/* Top row: Photo left, Name/Title right */}
           <div className="flex items-center gap-6 mb-6">
             {/* Photo - no border */}
@@ -64,23 +60,35 @@ export default function AlignmentSections() {
             
             {/* Name and Title */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-alignment-navy mb-1">
-                Jeremy Walker
-              </h3>
-              <p className="text-alignment-teal font-medium text-lg">
-                Founder, Beneath the Surface
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-alignment-navy mb-1">
+                Meet the Founder — Jeremy Walker
+              </h2>
+              <p className="text-alignment-teal font-medium text-lg italic">
+                My journey taught me the power of self-awareness, and that&apos;s become the heart of Alignment.
               </p>
             </div>
           </div>
           
           {/* Bio text */}
-          <div className="space-y-4 text-alignment-navy/80 text-base md:text-lg leading-relaxed">
+          <div className="space-y-5 text-alignment-navy/80 text-base md:text-lg leading-relaxed">
             <p>
-              I grew up in a farming family in regional Western Australia and began working on a relative&apos;s property straight after school. At 22, I took on clearing and farming a 6,000-acre ex-bluegum plantation—a demanding role that quickly became my identity. My self-worth rose and fell with the seasons, and eventually the pressure became impossible to ignore.
+              I grew up on a farm in regional Western Australia, where responsibility comes early and talking about what you&apos;re carrying isn&apos;t always easy. For a long time, I pushed through life on autopilot without realising how much was happening beneath the surface.
             </p>
             
             <p>
-              Through therapy, psychology, and long periods alone—especially after my wife and daughter moved to Perth—I began to understand the habits and pain driving my behaviour. Leaving the farm marked a shift toward rebuilding with clarity. Since then, I&apos;ve focused on studying human behaviour through Dr Shefali Tsabary&apos;s Conscious Psychology Institute and a Diploma in Psychotherapy and Counselling. That journey led to Beneath the Surface, a platform designed to help people reflect honestly and explore what&apos;s happening beneath everyday life.
+              Eventually I reached a point where I had to turn inward. That began a journey of studying psychology, behaviour, trauma patterns, and the ways our upbringing shapes us. What I discovered changed the way I saw myself — and the way I saw others.
+            </p>
+            
+            <p>
+              Alignment grew from that process. Not as a business idea, but as a natural extension of the inner work I was doing. I wanted to create something that helps people slow down, reflect honestly, and make sense of their inner world in a way that feels safe and grounded.
+            </p>
+            
+            <p className="font-medium text-alignment-navy">
+              Self-awareness has become the centre of my life.
+            </p>
+            
+            <p className="font-medium text-alignment-navy">
+              Alignment is simply the way I&apos;m choosing to share that with others.
             </p>
           </div>
         </div>
